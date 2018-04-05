@@ -1,0 +1,182 @@
+body {
+  background: #d8d8ff;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+div#main {
+  width: 694px;
+  margin: auto;
+}
+
+p {
+  font-size: 0.8em;
+  margin: 4px 0;
+}
+
+canvas {
+  border: solid black 1px;
+}
+
+select {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+div.select {
+  float: left;
+  width: 50%;
+}
+
+div.inner {
+  float: left;
+  width: 102px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #88f;
+}
+
+div.outer {
+  margin: 5px;
+  border: 1px solid #88f;
+  width: 102px;
+  padding: 5px;
+  float: left;
+  background: white;
+}
+
+div#header {
+  width: auto;
+  float: none;
+  clear: both;
+  padding: 0;
+}
+
+div.clear {
+  clear: both;
+}
+
+div#footer {
+  width: auto;
+  float: none;
+}
+
+div#footer p {
+  margin: 2px;
+  font-size: 0.7em;
+}
+
+div#display {
+  width: 402px;
+  height: 556px;
+}
+
+div#relations {
+  width: 248px;
+  height: 556px;
+}
+
+h1 {
+  margin: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h2 {
+  margin: 4px;
+  margin-bottom: 4px;
+  font-size: 1em;
+  text-align: center;
+}
+
+h3 {
+  margin: 4px;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+h3#blue {
+  margin-top: 8px;
+  text-align: left;
+  color: blue;
+}
+
+h3#green {
+  margin-top: 8px;
+  text-align: left;
+  color: green;
+}
+
+p.text {
+  margin: 10px;
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+p.notice {
+  margin: 0 5px 2px 0;
+  text-align: right;
+  font-weight: bold;
+  color: #88f;
+}
+
+/*
+table {
+  font-size: 1em;
+}
+
+div#options {
+  width: 120px;
+}
+
+
+div.outer {
+  margin-bottom: 20px;
+  border: 1px solid #88f;
+  width: 120px;
+  float: left;
+  background: white;
+}
+
+div#big {
+  width: 420px;
+  margin: 10px;
+}
+
+div#leftcol {
+  float: left;
+  width: 112px;
+  margin: 10px;
+}
+
+
+p {
+  margin: 2px;
+  text-align: center;
+}
+
+p.option {
+  float: left;
+  margin: 4px;
+  margin-right: 8px;
+}
+
+p.text {
+  text-align: left;
+  margin: 9px;
+  margin-top: 2px;
+}
+
+button {
+  margin: 0px;
+  float: left;
+  padding: 1px 2px;
+}
+
+button.big {
+  margin: 4px;
+  padding: 1px 4px;
+}
+*/

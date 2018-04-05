@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Fuzzy Spatial Relations Demo</title>
+    <link href="main.css" rel="stylesheet" type="text/css"></link>
+    <script type="text/javascript" src="lib/sylvester/sylvester.src.js"></script>
+    <script type="text/javascript" src="spatial.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body onload="init();">
+    <div id="main">
+      <div class="outer" id="header">
+        <h1>Fuzzy Spatial Relations Demo</h1>
+        <p class='notice'>...runs best with Google Chrome</p>
+      </div>
+      <div id="display" class="outer">
+        <canvas id="canvas_big" width="400px" height="400px"></canvas>
+        <div class="select">
+          <h3 id="blue">Reference Object</h3>
+          <select id="ref_obj_select">
+            <option selected></option>
+            <option>circle</option>
+            <option>squares</option>
+            <option>ring</option>
+            <option>T</option>
+          </select>
+        </div>
+        <div class="select">
+          <h3 id="green">Main Object</h3>
+          <select id="main_obj_select"> 
+            <option selected></option>
+            <option>circle</option>
+            <option>bar</option>
+            <option>ring</option>
+            <option>angle</option>
+          </select>
+        </div>
+        <div class="clear"></div>
+        <p class='text'>1. Choose reference object.<br/>
+                        2. Click to calculate spatial relations on the right.</br>
+                        3. Choose and place main object above.</p>
+      </div>
+      
+      <div id='relations' class="outer">
+        <h2>Spatial Relations</h2>
+        <div class="inner">
+          <h3>left-to</h3>
+          <canvas id="canvas_left" width="100px" height="100px"></canvas>
+          <p id="p_left">[?, ?, ?]<p>
+        </div>
+        <div class="inner">
+          <h3>right-to</h3>
+          <canvas id="canvas_right" width="100px" height="100px"></canvas>
+          <p id="p_right">[?, ?, ?]<p>
+        </div>
+        <div class="inner">
+          <h3>above</h3>
+          <canvas id="canvas_above" width="100px" height="100px"></canvas>
+          <p id="p_above">[?, ?, ?]<p>
+        </div>
+        <div class="inner">
+          <h3>below</h3>
+          <canvas id="canvas_below" width="100px" height="100px"></canvas>
+          <p id="p_below">[?, ?, ?]<p>
+        </div>
+        <div class="inner">
+          <h3>near</h3>
+          <canvas id="canvas_near" width="100px" height="100px"></canvas>
+          <p id="p_near">[?, ?, ?]<p>
+        </div>
+        <div class="inner">
+          <h3>far</h3>
+          <canvas id="canvas_far" width="100px" height="100px"></canvas>
+          <p id="p_far">[?, ?, ?]<p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="outer" id="footer">
+        <p>Copyright 2011 Erik Weitnauer, eweitnauer@gmail.com<br/>
+        Javascript implementation of Isabelle Bloch's algorithm in her
+        paper  <i>"Fuzzy Relative Position Between Objects in Image Processing: A
+        Morphological Approach"</i>, IEEE Transactions on Pattern Analysis and Machine Intelligence,
+        pp. 657-664, July, 1999.<br/>
+        The code is free to use :)
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
